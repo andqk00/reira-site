@@ -1,9 +1,9 @@
 import React from "react";
 import { TbCube3dSphere } from "react-icons/tb";
 import { GiLoincloth } from "react-icons/gi";
-import savageBeautyImg from "@/public/savage-beauty.jpeg";
-import uynosImg from "@/public/uynos.jpeg";
-import parisByNightImg from "@/public/paris-by-night.jpeg";
+import savageBeautyImg from "@/../public/savage-beauty.jpeg";
+import uynosImg from "@/../public/uynos.jpeg";
+import parisByNightImg from "@/../public/paris-by-night.jpeg";
 
 export const links = [
   {
