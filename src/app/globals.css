@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+html {
+  --line-color: #d4d4d4;
+}

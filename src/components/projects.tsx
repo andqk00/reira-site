@@ -13,7 +13,7 @@ export default function Projects() {
   const { ref } = useSectionInView("Projects");
 
   return (
-    <section className="scroll-mt-28" id="projects" ref={ref}>
+    <section className="mb-28 scroll-mt-28" id="projects" ref={ref}>
       <SectionHeading>My Projects</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
@@ -38,20 +38,20 @@ function Project({ title, description, tags, imageUrl }: ProjectProps) {
   return (
     <motion.section
       ref={ref}
-      className="group sm:relative bg-gray-100 border border-black/5 overflow-hidden max-w-2xl mx-auto sm:h-[16rem] sm:mb-8 last:mb-0 hover:bg-gray-200 transition grid grid-cols-1 sm:grid-cols-2 sm:gap-4 sm:items-center"
+      className="group sm:relative bg-gray-100 border border-black/5 overflow-hidden max-w-2xl mx-auto sm:h-[16rem] sm:mb-8 last:mb-0 hover:bg-gray-200 transition grid grid-cols-1 sm:grid-cols-2 sm:gap-4 sm:items-center dark:text-white dark:bg-white/10 dark:hover:bg-white/20"
       style={{ scale: scaleProgress, opacity: opacityProgress }}
     >
       {/* Content Section */}
       <div className="pt-4 pb-6 px-5 sm:pl-6 sm:pr-2 sm:pt-6 flex flex-col h-full group-even:sm:order-1">
         <h3 className="text-lg sm:text-2xl font-semibold">{title}</h3>
-        <p className="mt-2 text-sm sm:text-base leading-relaxed text-gray-600">
+        <p className="mt-2 text-sm sm:text-base leading-relaxed text-gray-600 dark:text-white/70">
           {description}
         </p>
         <ul className="flex flex-wrap mt-4 gap-1 sm:mt-auto">
           {tags.map((tag, index) => (
             <li
               key={index}
-              className="bg-black/[0.6] px-3 py-1 text-xs sm:text-sm tracking-wide text-white rounded-full"
+              className="bg-black/[0.6] px-3 py-1 text-xs sm:text-sm tracking-wide text-white rounded-full dark:text-white/70"
             >
               {tag}
             </li>
