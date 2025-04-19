@@ -50,14 +50,14 @@ export default function Contact() {
           placeholder="Your email"
           required
           maxLength={100}
-          className="h-12 rounded-lg border border-black/10 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-12 rounded-lg border border-black/10 p-4 bg-white/90 focus:bg-white dark:bg-white/80 dark:bg-opacity-80 dark:focus:bg-white/90 transition-all dark:outline-none"
         />
         <textarea
           placeholder="Your message"
           name="message"
           required
           maxLength={5000}
-          className="h-48 my-3 rounded-lg border border-black/10 p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+          className="h-48 my-3 rounded-lg border border-black/10 p-4 bg-white/90 focus:bg-white dark:bg-white/80 dark:bg-opacity-80 dark:focus:bg-white/90 transition-all dark:outline-none"
         />
         <SubmitButton />
       </form>
